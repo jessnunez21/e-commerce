@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="./assets/js/main.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <nav>
+                <div class="nav_logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="nav_logo-icon">
+                        <title>Academlo Logo</title>
+                        <g>
+                            <g>
+                                <path
+                                    d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+
+                    <h3><b>STORE</b></h3>
+                </div>
+
+                <div class="nav__link">
+                    <a href="#home">Home</a>
+                    <a href="#products">Products</a>
+                </div>
+                <div class="nav container">
+                    <a href="#home" class="nav__logo"> </a>
+                </div>
+                <i class="bx bxs-cart-add"></i>
+                <span class="amount__products"></span>
+            </nav>
+        </header>
+
+        <div class="container_living" id="home">
+            <div class="content__hero">
+                <div class="hero__img">
+                    <img class="img__hero" src="https://academlostorev1.netlify.app/images/sweater2.png"
+                        alt="sueter_academlo" />
+                </div>
+
+                <div class="hero__info">
+                    <h2>New Sweatshirt <span> COLLECTIONS 2023</span></h2>
+                    <p>
+                        Latest arrival of the new Hanes Midweight Crewneck sweatshirt
+                        imported from the 2022 series, with a modern design.
+                    </p>
+                    <p>$14.00</p>
+                    <a href="#products" class="button__hero">Show more</a>
+                    
+                </div>
+            </div>
+        </div>
+
+    <div class="section__filter">
+        <section class="container__filter" id="products"></section>
+    </div>
+
+        <main class="container">
+            <section class="products" ></section>
+        </main>
+
+        <div class="overlay  visible">
+            <div class="popup">
+                
+                
+            </div>
+        </div>
+
+        <div class="cart">
+            <div class="cart__products"></div>
+            <div class="cart__total">
+                <div class="cart__total--info">
+                    <span class="info__amount"></span>
+                    <span class="info__total"></span>
+                </div>
+                <button class="btn__buy">COMPRAR</button>
+            </div>
+        </div>
+
+        <div class="load" id="load">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="load__gif">
+                <title>Academlo Logo</title>
+                <g>
+                    <g>
+                        <path
+                            d="M24.45,56.48,0,42.36V14.12L24.46,0,48.92,14.12V42.36ZM1.89,41.26l22.56,13L47,41.26v-26l-22.56-13-22.56,13Z">
+                        </path>
+                        <path
+                            d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                        </path>
+                    </g>
+                </g>
+            </svg>
+        </div>
+
+        <footer>
+            <div class="content__footer">
+                <div class="content__info">
+                    <h3>Our information</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Buenos Aires-Argentina</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content__info">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li>
+                            <a href="#"> Support Center </a>
+                        </li>
+                        <li>
+                            <a href="#"> Customer Support </a>
+                        </li>
+                        <li>
+                            <a href="#"> About Us </a>
+                        </li>
+                        <li>
+                            <a href="#"> Copy Right </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content__info">
+                    <h3>Product</h3>
+                    <ul>
+                        <li>
+                            <a href="#"> Hoodies </a>
+                        </li>
+                        <li>
+                            <a href="#"> Shirts </a>
+                        </li>
+                        <li>
+                            <a href="#"> About Us </a>
+                        </li>
+                        <li>
+                            <a href="#"> Sweatshirts </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content__info">
+                    <h3>Social</h3>
+                    <div class="content__redes">
+                        <a class="fa-brands fa-facebook" target="_blank" href="https://www.facebook.com/jess.nunez.75">
+                            <i class="bx bxl-facebook-circle"></i>
+                        </a>
+                        <a class="fa-brands fa-twitter" target="_blank" href="https://twitter.com/">
+                            <i class="bx bxl-twitter"></i>
+                        </a>
+                        <a class="fa-brands fa-whatsapp" target="_blank" href="https://www.whatsapp.com/">
+                            <i class="bx bxl-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="repository">
+                <div class="name">
+                    <h3>Nombre:</h3>
+                    <span>Jesus Alfredo Nuñez Chirnos</span>
+                    <h3>Correo:</h3>
+                    <span>nunezjess85@gmail.com</span>
+                    <a  target="_blank" href="https://github.com/jessnunez21/e-commerce.git">repositorio/Github</a>
+                </div>
+        </footer>
+    </div>
+</body>
+
+</html>
