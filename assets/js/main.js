@@ -383,6 +383,25 @@ function printModalPopUp(db){
   printProducts(db)
 }
 
+function darkMode() {
+  const toggleHTML = document.getElementById("nav_dark__mode");
+ const bodyHTML = document.querySelector("body");
+ const productsHTML = document.querySelector(".products");
+ const headerHTML = document.getElementById("header__darkmode");
+ const contentLivingHTML = document.querySelector(".container_living")
+ 
+
+ toggleHTML.addEventListener("click", function () {
+    toggleHTML.classList.toggle("active");
+    bodyHTML.classList.toggle("active");
+    productsHTML.classList.toggle("active");
+    headerHTML.classList.toggle("active");
+    contentLivingHTML.classList.toggle("active")
+ })
+ 
+ handlePrintAmountProducts(db)
+}
+
 async function main() {
   const db = {
     products: JSON.parse(window.localStorage.getItem("products")) ||
@@ -404,17 +423,8 @@ async function main() {
   addInfoToButtonAllFiltter(db);
   printFilterButton(db);
   printModalPopUp(db)
+  darkMode()
   
-  const toggleHTML = document.getElementById("nav_dark__mode");
- const bodyHTML = document.querySelector("Body");
- 
-
- toggleHTML.addEventListener("click", function () {
-    toggleHTML.classList.toggle("active");
-    bodyHTML.classList.toggle("active")
- })
- 
- 
   
 
 

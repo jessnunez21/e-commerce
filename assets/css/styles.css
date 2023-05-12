@@ -27,17 +27,17 @@
  body{
    
     background-color:var(--bacground-body);
-    
+    transition:  background-color 0.5s;
  }
 
  body.active{
-   z-index: 10000;
+ 
     background-color: rgb(47, 45, 45);
+   transition :background-color 0.5s;
+    
     
  }
- header.active{
-   background-color: rgb(47, 45, 45);
- }
+
  
  html{
    scroll-behavior: smooth;
@@ -89,6 +89,11 @@ body::-webkit-scrollbar-track {
     top: 0;
     z-index: var( --z-header);
     box-shadow: var(--box-shadow);
+ }
+ #header__darkmode.active{
+   background-color: transparent;
+   transition :background-color 0.5s;
+   color: var(--bacground-color-hover);
  }
 
  header > nav{
@@ -260,6 +265,20 @@ body::-webkit-scrollbar-track {
    align-items: center;
    justify-content: center;
  }
+ .container_living.active{
+   
+ 
+      background-color: rgb(47, 45, 45);
+     transition :background-color 0.5s;
+     color: var(--bacground-color-hover);
+      
+      
+   
+ }
+
+ .container_living p .active{
+   color: var(--bacground-color-hover);
+ } 
  
  .content__hero{
    width: 1400px;
@@ -363,6 +382,13 @@ body::-webkit-scrollbar-track {
     border-radius: 1rem;
     
  }
+ .products.active{
+ 
+   background-color: rgb(47, 45, 45);
+  transition :background-color 0.5s;
+   
+   
+}
  
 
  .product{
