@@ -25,10 +25,20 @@
 }
 
  body{
-  
+   
     background-color:var(--bacground-body);
     
  }
+
+ body.active{
+   z-index: 10000;
+    background-color: rgb(47, 45, 45);
+    
+ }
+ header.active{
+   background-color: rgb(47, 45, 45);
+ }
+ 
  html{
    scroll-behavior: smooth;
  }
@@ -95,7 +105,7 @@ body::-webkit-scrollbar-track {
 
  
  header > nav > i {
-    color: var(--bacground-color-hover);
+   color: var(--bacground-color-hover);
     background-color: var(--bx-plus);
     display: flex;
     justify-content: center;
@@ -113,6 +123,40 @@ body::-webkit-scrollbar-track {
    background-color: rgb(95, 128, 133);
    color: var(--color-text);
  }
+
+ #nav_dark__mode{
+  position: relative;
+  width: 60px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 4px 4px 6px #cecece,
+              inset -4px -4px 6px #fff ;
+  margin-right: 1rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  margin: 0px auto;
+ }
+ .toggle{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 40px;
+   height: 40px;
+   transform: scale(.7);
+   background-color: linear-gradient(145deg, #d8d8d8, #ffff);
+   border-radius: 25px;
+   box-shadow:  3px 3px 8px #c4c4c4,
+                -3px -3px 8px #fff;
+ }
+
+ #nav_dark__mode.active .toggle{
+   left: 20px;
+
+ } 
+
+ 
+
 
  .amount__products{
    width: 23px;

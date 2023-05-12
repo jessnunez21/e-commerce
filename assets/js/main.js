@@ -405,8 +405,14 @@ async function main() {
   printFilterButton(db);
   printModalPopUp(db)
   
+  const toggleHTML = document.getElementById("nav_dark__mode");
+ const bodyHTML = document.querySelector("Body");
+ 
 
-
+ toggleHTML.addEventListener("click", function () {
+    toggleHTML.classList.toggle("active");
+    bodyHTML.classList.toggle("active")
+ })
  
  
   
